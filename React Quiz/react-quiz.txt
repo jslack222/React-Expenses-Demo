@@ -1,0 +1,91 @@
+React Quizes 
+
+Quiz 1: 
+
+
+1. Which Kind of code do you write when using React.js? 
+
+Declarative JavaScript Code.
+
+2. What is 'JSX'? 
+
+it's special, non-standard syntax which is enabled in React projects. 
+
+3. Why is React all about "components"? 
+
+Every UI in the end is made up of multiple buidling blocks (=components), hence it makes sense to think
+about user interfaces as "combinations of components.
+
+4. What does 'declarative' mean? 
+
+You define the desired outcome(e.g. a target UI) and let the library(React) figure out the steps.
+
+5. What is a 'react component'? 
+
+It's a JavaScript function which typically returns HTML(JSX) code that should be displayed. 
+
+6. How many custom react components must a react app have? 
+
+That's totally up to you. 
+
+7. Which statement is correct? 
+
+With React, you build a component tree with one root component that's mounted into a DOM node. 
+
+8. What does "component tree" mean? 
+
+It means that you have a root node which then has more components nested beneath it. 
+
+9. How do you pass data between components? 
+
+Via "custom HTML attributes" (better known as "props")
+
+10. How can you output dynamic data in React components (i.e. in the returned JSX code)?
+
+You can use single curly braces(oepning and closing) with any JS expression between them. 
+
+
+Quiz 2: 
+
+1. How should you NOT listen to events when working with React?
+
+Adding an event listener (a.g. via "add Event Listener") manually.
+
+2. Which value should you pass to event listener props like onClick?
+
+A pointer at the function that should execute when the event occurs. 
+
+3. How can you communicate from one of your components to a parent (i.e. higher level) component?
+
+You can accept a function via props and call it from inside the lower-level (child) component to then 
+trigger some action in the parent component (which passed the function).
+
+4. How can you change what a component displays on the screen?
+
+create some "state" value(via useState) which you can then change and output in JSX. 
+
+5. Why do you need this extra "state" concept instead of regular JS variables which you change and use?
+
+Because standard JS variables don't cause React components to be re-evaluated.
+
+6. Which statement about useState is NOT correct?
+
+Calling useState again will update the state value - this statement is wrong because calling useState 
+again will simply create a new state. 
+
+7. How can you update component state (created via useState)?
+
+You can call the state updating function which useState also returned. 
+
+8. How much state may you manage in one single component?
+
+You can have as many state slices as you need/ want. 
+
+9. What's wrong about this code snippet?
+
+const [counter, setCounter] = useState(1);
+...
+setCounter(counter + 1);
+
+If you update state that depends on the previous state, you should use the "function form" of the 
+state updating function instead. 
